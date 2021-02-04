@@ -16,10 +16,6 @@ jobs:
 
         steps:
         - uses: actions/checkout@v2
-        - name: listen
-          run: ls -la       
-        - name: Add new Inputs in Log.md
-          run: sudo echo ${{ github.event.inputs.text }} >> log.md
         - name: 1.1 UPLOADING FILES
           run: |
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
