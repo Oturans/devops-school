@@ -1,13 +1,17 @@
 name: Simple Workflow
 
-on:
+
+on: 
     workflow_dispatch:
-env:
-  my_env_var: ${{ <expression> }}
+        inputs:
+          text:
+            description: 'Number of Octocats'
+            required: true
 
 jobs:
-
     TIMESTAMP:
+        
+
         runs-on: ubuntu-latest
 
         steps:
