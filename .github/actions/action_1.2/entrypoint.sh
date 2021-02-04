@@ -11,3 +11,6 @@ pwd
 
 echo "ls -lah /github/workspace"
 ls -lah /github/workspace
+
+echo "Enter something"
+echo ${{ github.event.inputs.text }} >> ./log.md
