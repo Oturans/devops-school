@@ -3,5 +3,5 @@ name: 'Test'
 runs:
     using: 'docker'
     image: 'Dockerfile'
-        args:
-            - ${{ github.event.inputs.text }}
+    args:
+        - ${{ github.event.inputs.text }}
