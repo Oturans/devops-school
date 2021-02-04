@@ -5,7 +5,7 @@ on:
     workflow_dispatch:
         inputs:
           text:
-            description: 'Number of Octocats'
+            description: 'Enter something'
             required: true
 
 jobs:
