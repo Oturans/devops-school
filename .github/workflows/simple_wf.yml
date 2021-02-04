@@ -10,8 +10,6 @@ on:
 
 jobs:
     TIMESTAMP:
-        
-
         runs-on: ubuntu-latest
 
         steps:
@@ -21,9 +19,11 @@ jobs:
             cp ./scripts/main.py ./.github/actions/action_1.2/main.py
         - name: 1.2 EXECUTING THE PYTHON SCRIPT
           uses: ./.github/actions/action_1.2
+        - name: Add new Inputs in Log.txt
+          run: echo ${{ github.event.inputs.text }} >> log.txt
 
         - name: 1.3 DOWNLOAD ARTIFACT
           uses: actions/upload-artifact@v2
           with:
-              name: log.md
+              name: log.*
               path: /home/runner/work/devops-school/devops-school/log.md
