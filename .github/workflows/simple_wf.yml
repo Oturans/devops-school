@@ -23,8 +23,8 @@ jobs:
           uses: ./.github/actions/action_1.2
         - name: listen
           run: ls -la /home/runner/work/devops-school/devops-school/       
-        - name: Add new Inputs in Log.md
-          run: sudo echo ${{ github.event.inputs.text }} >> /home/runner/work/devops-school/devops-school/log.md
+  #      - name: Add new Inputs in Log.md
+  #        run: sudo echo ${{ github.event.inputs.text }} >> /home/runner/work/devops-school/devops-school/log.md
         - name: 1.3 DOWNLOAD ARTIFACT
           uses: actions/upload-artifact@v2
           with:
